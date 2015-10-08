@@ -11,4 +11,12 @@ public class Capa extends Componente {
 			subcapa.aplicar_efecto();
 		}
 	}
+	
+	public Componente obtener(int i){
+		return subcapas.get(i);
+	}
+	
+	public void agregar(Componente nuevoHijo){
+		subcapas.add(nuevoHijo);
+	}
 }

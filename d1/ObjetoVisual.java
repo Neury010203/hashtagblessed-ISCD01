@@ -11,5 +11,13 @@ public class ObjetoVisual extends Componente {
 			hijo.aplicar_efecto();
 		}
 	}
+	
+	public Componente obtener(int i){
+		return hijos.get(i);
+	}
+	
+	public void agregar(ObjetoVisual nuevoHijo){
+		hijos.add(nuevoHijo);
+	}
 
 }
